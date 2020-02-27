@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:foregroundGravity="center_vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvedu"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgedu"
+            android:layout_width="90dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:src="@drawable/dislek"/>
+
+        <TextView
+            android:text="Apa Itu Disleksia ?"
+            android:textStyle="bold"
+            android:textColor="@color/primer"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvkonsul"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/cvedu"
+        android:layout_width="150dp"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgkons"
+                android:layout_width="90dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:src="@drawable/imgedu"/>
+
+            <TextView
+                android:text="Konsultasi"
+                android:textStyle="bold"
+                android:textColor="@color/primer"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvvisual"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/cvedu"
+        android:layout_width="150dp"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgvid"
+                android:layout_width="90dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:src="@drawable/video"/>
+
+            <TextView
+                android:text="Video Edukasi"
+                android:textStyle="bold"
+                android:textColor="@color/primer"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvgames"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/cvvisual"
+        android:layout_below="@+id/cvkonsul"
+        android:layout_width="150dp"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imggame"
+                android:layout_width="90dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:src="@drawable/games"/>
+
+            <TextView
+                android:text="Games"
+                android:textStyle="bold"
+                android:textColor="@color/primer"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btm_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/primer"
+        app:itemTextColor="@color/primer"
+        app:menu="@menu/navigation">
+        
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

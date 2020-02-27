@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EduDesper</string>
+    <string name="edukasi1">
+        Disleksia adalah gangguan dalam proses belajar yang ditandai dengan kesulitan membaca, menulis, atau mengeja. Penderita disleksia akan kesulitan dalam mengidentifikasi kata-kata yang diucapkan, dan mengubahnya menjadi huruf atau kalimat.
+    </string>
+    <string name="edukasi2">
+        Mengenali bunyi kata yang terdengar mirip, seperti ‘pasar’ dan ‘pagar’.Mengeja dan menulis, mulai dari kata sederhana hingga kalimat yang rumit.Memahami huruf dan susunan huruf yang membentuk bunyi tersebut.Membaca kalimat dengan tepat, serta memahami makna yang dibaca.Menyusun kalimat dan memahami kosakata baru.
+    </string>
+</resources>

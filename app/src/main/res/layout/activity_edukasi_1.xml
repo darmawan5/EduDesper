@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".edukasi_1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgedu_home"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/edukasi1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:id="@+id/tvedu_home"
+            android:textColor="@color/textcolor"
+            android:gravity="center"
+            android:layout_below="@+id/imgedu_home"
+            android:text="@string/edukasi1"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/btnlanjut_1"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/buttonrounded"
+            android:text="Lanjut"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnkembali_1"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/buttonrounded"
+            android:text="Kembali"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

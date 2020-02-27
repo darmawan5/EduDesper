@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+<RelativeLayout
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="LOGIN"
+        android:drawableStart="@drawable/back"
+        android:drawablePadding="15dp"
+        android:textColor="@color/primer"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR AKUN"
+        android:textColor="@color/textcolor"
+        android:textSize="35sp"
+        android:layout_below="@+id/back"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutregnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:errorEnabled="true"
+        android:layout_below="@+id/tvregister">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextregnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/user"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="20dp"
+            android:hint="Nama"
+            android:backgroundTint="@color/primer"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutregtgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:errorEnabled="true"
+        android:layout_below="@+id/layoutregnama">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextregtgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/calendar"
+            android:drawableStart="@drawable/calendar"
+            android:drawablePadding="20dp"
+            android:hint="Tanggal Lahir"
+            android:backgroundTint="@color/primer"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutreglocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:errorEnabled="true"
+        android:layout_below="@+id/layoutregtgl">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextreglocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/location"
+            android:drawableStart="@drawable/location"
+            android:drawablePadding="20dp"
+            android:hint="Alamat"
+            android:backgroundTint="@color/primer"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutregemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:errorEnabled="true"
+        android:layout_below="@+id/layoutreglocation">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextregemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/envelope"
+            android:drawableStart="@drawable/envelope"
+            android:drawablePadding="20dp"
+            android:hint="Email"
+            android:backgroundTint="@color/primer"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutregpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#000000"
+        android:layout_below="@+id/layoutregemail">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextregpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutregemail"
+            android:drawableLeft="@drawable/lock"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:backgroundTint="@color/primer"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnregis"
+        android:layout_margin="15dp"
+        android:text="DAFTAR"
+        android:layout_below="@+id/layoutregpass"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonrounded"
+        android:textColor="@android:color/white"
+        />
+</RelativeLayout>
+
+</ScrollView>
